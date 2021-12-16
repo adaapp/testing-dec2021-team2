@@ -11,7 +11,7 @@ We're team 2, welcome to our team's project. We will be making a colour value co
 
 🤝 Fahima - QA
 
-👨‍💻 Chi - Dev Ops
+👨‍💻 Chi - DevOps
 
 <h4 align="left">Connect with us:</h4>
 <p align="left">
