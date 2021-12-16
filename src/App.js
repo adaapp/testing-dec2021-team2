@@ -7,6 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Team 2: Colour Converter</p>
+        <form>
+          <button className="Launch-Button" onClick={Launch}>Launch Project! 🚀</button>
+        </form>
         <a
           className="App-link"
           href="https://github.com/adaapp/testing-dec2021-team2"
@@ -18,6 +21,10 @@ function App() {
       </header>
     </div>
   );
+}
+
+function Launch() {
+  window.open("https://www.google.com/")
 }
 
 export default App;
