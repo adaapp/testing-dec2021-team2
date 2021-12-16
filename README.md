@@ -1,6 +1,8 @@
 <h1 align="center"> Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> </h1>
 
-We're team 2, welcome to our team's project. We will be making a colour value converter with react! See below for our team members and their roles.
+We're team 2, welcome to our team's project. We will be making a colour value converter with react! 
+
+See below for our team members and their roles.
 
 <h4 align="left">Team Members and Roles:</h4>
 <p align="left"></p>
