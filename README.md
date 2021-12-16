@@ -1,4 +1,4 @@
-<div align="right">[![Netlify Status](https://api.netlify.com/api/v1/badges/24194c9e-72f2-4605-9cf6-ed49e4a9298e/deploy-status)](https://app.netlify.com/sites/affectionate-gates-a740a1/deploys)</div>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24194c9e-72f2-4605-9cf6-ed49e4a9298e/deploy-status)](https://app.netlify.com/sites/affectionate-gates-a740a1/deploys)
 <h1 align="center"> Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> </h1>
 
 We're team 2, welcome to our team's project. We will be making a colour value converter with react! 
