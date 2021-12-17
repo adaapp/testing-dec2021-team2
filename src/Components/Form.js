@@ -5,9 +5,9 @@ import '../App.css';
 // function that deals with all of this. 
 export default function Form() {
 	let [hex, setHex] = useState('');
-	const [r, setR] = useState(255);
-	const [g, setG] = useState(255);
-	const [b, setB] = useState(255);
+	const [r, setR] = useState(0);
+	const [g, setG] = useState(0);
+	const [b, setB] = useState(0);
 	function convertRGB(r, g, b) {
 		const rgb = (r << 16) | (g << 8) | (b << 0);
     setHex( '#' + (0x1000000 + rgb).toString(16).slice(1));
