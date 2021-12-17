@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 300px;
+  width: 300px;
   pointer-events: none;
 }
 
@@ -23,7 +23,14 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
-
+.Card {
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  min-width: 300px;
+}
 .Preview {
   margin: auto;
   height: 100px;
