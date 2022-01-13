@@ -1,22 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
+//  imported hooks
 import { useState, useEffect } from 'react';
 
 // function that deals with all of this. 
 function App() {
-	let [hex, setHex] = useState('');
+	let [hex, setHex,] = useState('');
 	const [r, setR] = useState(0);
 	const [g, setG] = useState(0);
 	const [b, setB] = useState(0);
 	function convertRGB(r, g, b) {
 		console.log(r, g, b);
 		const rgb = (r << 16) | (g << 8) | (b << 0);
-    setHex( '#' + (0x1000000 + rgb).toString(16).slice(1));
+		setHex('#' + (0x1000000 + rgb).toString(16).slice(1));
+	}
+	// sets the value for the r, g, and b variables whenerver you change a value on the input. <input>
+	function changeR(e) {
+		if(e.target.value > 255){
+			e.target.value = 255;
+		} else {
+			setR(e.target.value)
+		}
 	}
 
-	function changeR(e) { setR(e.target.value) }
-	function changeG(e) { setG(e.target.value) }
-	function changeB(e) { setB(e.target.value) }
+	function changeG(e) {
+		if(e.target.value > 255){
+			e.target.value = 255;
+		} else {
+			setG(e.target.value)
+		}
+	}
+
+	function changeB(e) {
+		if(e.target.value > 255){
+			e.target.value = 255;
+		} else {
+			setB(e.target.value)
+		}
+	}
+	
 	useEffect(() => { convertRGB(r, g, b); }, [r, g, b])
 
 	return (
@@ -40,7 +62,7 @@ function App() {
 				<form>
 					<label>
 						R:
-						<input type="number" name="r" onChange={changeR} />
+						<input id="myInput" type="number" name="r" onChange={changeR} />
 					</label>
 					<label>
 						G:
