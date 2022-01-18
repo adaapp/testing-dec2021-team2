@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 //  imported hooks
 import { useState, useEffect } from 'react';
@@ -77,10 +76,7 @@ function App() {
 
 		</div>
 	);
-}
 
-function Launch() {
-	window.open("https://affectionate-gates-a740a1.netlify.app/?")
-}
+
 
 export default App;
