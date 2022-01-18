@@ -18,9 +18,9 @@ export default function Form() {
 			e.target.value = 255;
 			setR(255);
 		} else {
-			setR(e.target.value)
+			setR(e.target.value) 
 		}
-		
+		console.log(e)
 	};
 
 	function changeG(e) { 
