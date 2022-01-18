@@ -17,7 +17,7 @@ function App() {
 
 	// sets the value for the r, g, and b variables whenerver you change a value on the input. <input>
 	function changeR(e) {
-		if (e.target.value > 255) {
+		if (e.target.value > 255 || e.target.value < 0) {
 			e.target.value = 255;
 			setR(255);
 		} else {
@@ -26,7 +26,7 @@ function App() {
 	}
 
 	function changeG(e) {
-		if (e.target.value > 255) {
+		if (e.target.value > 255 || e.target.value < 0) {
 			e.target.value = 255;
 			setG(255);
 		} else {
@@ -35,7 +35,7 @@ function App() {
 	}
 
 	function changeB(e) {
-		if (e.target.value > 255) {
+		if (e.target.value > 255 || e.target.value < 0) {
 			e.target.value = 255;
 			setB(255);
 		} else {
