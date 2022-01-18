@@ -14,31 +14,35 @@ function App() {
 		const rgb = (r << 16) | (g << 8) | (b << 0);
 		setHex('#' + (0x1000000 + rgb).toString(16).slice(1));
 	}
+
 	// sets the value for the r, g, and b variables whenerver you change a value on the input. <input>
 	function changeR(e) {
-		if(e.target.value > 255){
+		if (e.target.value > 255) {
 			e.target.value = 255;
+			setR(255);
 		} else {
 			setR(e.target.value)
 		}
 	}
 
 	function changeG(e) {
-		if(e.target.value > 255){
+		if (e.target.value > 255) {
 			e.target.value = 255;
+			setG(255);
 		} else {
 			setG(e.target.value)
 		}
 	}
 
 	function changeB(e) {
-		if(e.target.value > 255){
+		if (e.target.value > 255) {
 			e.target.value = 255;
+			setB(255);
 		} else {
 			setB(e.target.value)
 		}
 	}
-	
+
 	useEffect(() => { convertRGB(r, g, b); }, [r, g, b])
 
 	return (
