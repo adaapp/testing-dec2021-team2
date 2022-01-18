@@ -16,6 +16,8 @@ function App() {
 	}
 
 	// sets the value for the r, g, and b variables whenerver you change a value on the input. <input>
+
+	// max value set to 255
 	function changeR(e) {
 		if (e.target.value > 255 || e.target.value < 0) {
 			e.target.value = 255;
@@ -36,7 +38,7 @@ function App() {
 
 	function changeB(e) {
 		if (e.target.value > 255 || e.target.value < 0) {
-			e.target.value = 255;
+			e.target.value = 255; 
 			setB(255);
 		} else {
 			setB(e.target.value)
