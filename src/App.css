@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 300px;
   pointer-events: none;
 }
 
@@ -14,24 +14,35 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-top: 30px;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.Card {
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  min-width: 300px;
+}
+.Preview {
+  margin: auto;
+  height: 100px;
+  width: 30%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 .Launch-Button {
-  margin-bottom: 20px;
-  background-color: #61DBFB;
-  border: 2px solid #61DBFB;
+  background-color: #282c34;
+  border: 2px solid #282c34;
   border-radius: 4px;
   padding: 15px 40px;
   text-align: center;
@@ -44,10 +55,14 @@
 }
 
 .Launch-Button:hover {
-  border: 2px solid #61DBFB;
-  background-color: #282c34;
-  color: white;
+  border: 2px solid #282c34;
+  background-color: white;
+  color: #282c34;
   cursor: pointer
+}
+
+input {
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {
