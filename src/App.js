@@ -4,6 +4,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 
 function App() {
+	let [hex, setHex,] = useState('');
 	return (
 		<div className="App">
 			<header className="App-header">
