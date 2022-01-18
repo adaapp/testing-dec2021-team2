@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+// imported hooks
+import { useState, useEffect } from 'react';
 
 function App() {
 	return (
