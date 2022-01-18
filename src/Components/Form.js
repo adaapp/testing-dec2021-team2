@@ -13,9 +13,33 @@ export default function Form() {
     setHex( '#' + (0x1000000 + rgb).toString(16).slice(1));
 	}
 
-	function changeR(e) { setR(e.target.value) }
-	function changeG(e) { setG(e.target.value) }
-	function changeB(e) { setB(e.target.value) }
+	function changeR(e) { 
+		if (e.target.value > 255 || e.target.value < 0) {
+			e.target.value = 255;
+			setR(255);
+		} else {
+			setR(e.target.value)
+		}
+		
+	};
+	
+	function changeG(e) { 
+		if (e.target.value > 255 || e.target.value < 0) {
+			e.target.value = 255;
+			setG(255);
+		} else {
+			setG(e.target.value)
+		}
+	 };
+
+	function changeB(e) { if(e < 255 && e >= 0) {
+		if (e.target.value > 255 || e.target.value < 0) {
+			e.target.value = 255; 
+			setB(255);
+		} else {
+			setB(e.target.value)
+		} 
+	} };
 	useEffect(() => { convertRGB(r, g, b); }, [r, g, b])
 
     return (

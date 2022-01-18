@@ -2,6 +2,10 @@ import React from 'react'
 import '../App.css';
 import logo from "../Images/Colourwheel.png"
 
+function Launch() {
+  window.open("https://github.com/adaapp/testing-dec2021-team2")
+}
+
 export default function Header() {
     return (
       <div className="App">
@@ -15,7 +19,3 @@ export default function Header() {
       </div>
     )
 }
-
-function Launch() {
-    window.open("https://github.com/adaapp/testing-dec2021-team2")
-  }
