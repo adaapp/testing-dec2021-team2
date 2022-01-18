@@ -22,7 +22,7 @@ export default function Form() {
 		}
 		
 	};
-	
+
 	function changeG(e) { 
 		if (e.target.value > 255 || e.target.value < 0) {
 			e.target.value = 255;
@@ -32,14 +32,15 @@ export default function Form() {
 		}
 	 };
 
-	function changeB(e) { if(e < 255 && e >= 0) {
+	function changeB(e) { 
 		if (e.target.value > 255 || e.target.value < 0) {
 			e.target.value = 255; 
 			setB(255);
 		} else {
 			setB(e.target.value)
 		} 
-	} };
+	};
+
 	useEffect(() => { convertRGB(r, g, b); }, [r, g, b])
 
     return (
