@@ -12,6 +12,7 @@ function convertRGB(r, g, b) {
 };
 
 function convertHex(hex) {
+    hex = hex.replace('#', '');
     let intValue = parseInt(hex, 16);
     return [(intValue >> 16) & 255, (intValue >> 8) & 255, intValue & 255]
 }

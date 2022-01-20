@@ -31,11 +31,15 @@ exports[`checks that DOM for App is consistent 1`] = `
   <div
     className="App"
   >
-    <h1
-      data-testid="hex"
-    >
-      
-    </h1>
+    <label>
+      Hex:
+      <input
+        data-testid="hex"
+        name="r"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
     <div
       className="Preview"
       data-testid="preview"
@@ -52,11 +56,15 @@ exports[`checks that DOM for App is consistent 1`] = `
         R:
         <input
           data-testid="rInput"
-          max="255"
-          min="0"
           name="r"
+          onBlur={[Function]}
           onChange={[Function]}
-          value="0"
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+          value=""
         />
       </label>
       <label
@@ -65,11 +73,15 @@ exports[`checks that DOM for App is consistent 1`] = `
         G:
         <input
           data-testid="gInput"
-          max="255"
-          min="0"
           name="g"
+          onBlur={[Function]}
           onChange={[Function]}
-          value="0"
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+          value=""
         />
       </label>
       <label
@@ -78,11 +90,15 @@ exports[`checks that DOM for App is consistent 1`] = `
         B:
         <input
           data-testid="bInput"
-          max="255"
-          min="0"
           name="b"
+          onBlur={[Function]}
           onChange={[Function]}
-          value="0"
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+          value=""
         />
       </label>
     </form>
@@ -94,17 +110,21 @@ exports[`checks that DOM for Form is consistent 1`] = `
 <div
   className="App"
 >
-  <h1
-    data-testid="hex"
-  >
-    #000000
-  </h1>
+  <label>
+    Hex:
+    <input
+      data-testid="hex"
+      name="r"
+      onChange={[Function]}
+      value=""
+    />
+  </label>
   <div
     className="Preview"
     data-testid="preview"
     style={
       Object {
-        "backgroundColor": "#000000",
+        "backgroundColor": "",
       }
     }
   />
@@ -115,11 +135,15 @@ exports[`checks that DOM for Form is consistent 1`] = `
       R:
       <input
         data-testid="rInput"
-        max="255"
-        min="0"
         name="r"
+        onBlur={[Function]}
         onChange={[Function]}
-        value="0"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        value=""
       />
     </label>
     <label
@@ -128,11 +152,15 @@ exports[`checks that DOM for Form is consistent 1`] = `
       G:
       <input
         data-testid="gInput"
-        max="255"
-        min="0"
         name="g"
+        onBlur={[Function]}
         onChange={[Function]}
-        value="0"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        value=""
       />
     </label>
     <label
@@ -141,11 +169,15 @@ exports[`checks that DOM for Form is consistent 1`] = `
       B:
       <input
         data-testid="bInput"
-        max="255"
-        min="0"
         name="b"
+        onBlur={[Function]}
         onChange={[Function]}
-        value="0"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        value=""
       />
     </label>
   </form>

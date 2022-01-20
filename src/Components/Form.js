@@ -1,62 +1,61 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../App.css';
-import { convertRGB, cleanString } from './formFunctions';
+import { convertRGB, cleanString, convertHex } from './formFunctions';
 
 // function that deals with all of this. 
 export default function Form() {
 	let [hex, setHex] = useState('');
-	const [r, setR] = useState('0');
-	const [g, setG] = useState('0');
-	const [b, setB] = useState('0');
+	let [rgb, setRGB] = useState(['', '', '']);
 
-	function changeR(e) {
-		if ((e.target.value > 255 || e.target.value < 0) || e.target.value.length > 3) {
-			setR('255');
-		} else {
-			setR(cleanString(e.target.value));
-		}
+	function change(value, index) {
+		let current = rgb;
+		let number = parseInt(value);
+
+		current[index] = (value > 255 || value < 0) || value.length > 3 ? 
+			'255' : isNaN(number) ? '' : rgb[index] === '0' ? 
+				number.toString() : cleanString(value);
+
+		setRGB(current);
+		updateHex();
+	}
+
+	function changeHex(e) {
+		let converted = convertHex(e.target.value);
+		
+		setHex(e.target.value);
+		setRGB(converted);
 	};
 
-	function changeG(e) {
-		if ((e.target.value > 255 || e.target.value < 0) || e.target.value.length > 3) {
-			setG('255');
-		} else {
-			setG(cleanString(e.target.value));
-		}
-	 };
-
-	function changeB(e) {
-		if ((e.target.value > 255 || e.target.value < 0) || e.target.value.length > 3) {
-			setB('255');
-		} else {
-			setB(cleanString(e.target.value))
-		} 
-	};
-
-	useEffect(() => {
+	function updateHex() {
 		setHex(
 			convertRGB(
-				cleanString(r), 
-				cleanString(g), 
-				cleanString(b)
+				cleanString(rgb[0]), 
+				cleanString(rgb[1]), 
+				cleanString(rgb[2])
 			)
 		);
-	}, [r, g, b]);
+	};
 
     return (
         <div className="App">
-            <h1 data-testid="hex">{hex}</h1>
-				<div data-testid="preview" className="Preview" style={{ backgroundColor: hex}}></div>
+			<label>
+				 Hex:<input data-testid="hex" value={hex} name="r" onChange={changeHex}/>
+			</label>
+
+				<div data-testid="preview" className="Preview" style={{ backgroundColor: hex }}></div>
 				<form>
 					<label data-testid="r">
-						R:<input data-testid="rInput" value={r} name="r" max="255" min="0" onChange={changeR} />
+						R:<input data-testid="rInput" style={{width: '100px'}} value={rgb[0]} onBlur={(e) => {if(e.target.value.length === 0) e.target.value = '0'}}
+								onChange={(e) => {change(e.target.value, 0)}} name="r"/>
 					</label>
 					<label data-testid="g">
-						G:<input data-testid="gInput" value={g} name="g" max="255" min="0" onChange={changeG} />
+						G:<input data-testid="gInput" style={{width: '100px'}} value={rgb[1]} onBlur={(e) => {if(e.target.value.length === 0) e.target.value = '0'}}
+								onChange={(e) => {change(e.target.value, 1)}} name="g"/>
 					</label>
 					<label data-testid="b">
-						B:<input data-testid="bInput" value={b} name="b" max="255" min="0" onChange={changeB} />
+						B:<input data-testid="bInput" style={{width: '100px'}} value={rgb[2]} onBlur={(e) => {if(e.target.value.length === 0) e.target.value = '0'}}
+								onChange={(e) => {change(e.target.value, 2)}} name="b"/>
 					</label>
 				</form>
         </div>
