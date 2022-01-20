@@ -6,7 +6,9 @@ We're team 2, welcome to our team's project. We will be making a colour value co
 
 ## The Project
 Our project will convert RGB colour values into hex colour values as well as show the colour to the user so they can check that they have the right colour. 
+  
 ![enter image description here](http://code.adonline.id.au/wp-content/uploads/excel-rgb-to-hex-01-2.png)
+  
 *Table showing rgb to hex equivalents*
 
 ## The team
