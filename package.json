@@ -11,6 +11,13 @@
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.2"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/index.js",
+      "!src/reportWebVitals.js",
+      "!src/Components/smoke test.js"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

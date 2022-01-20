@@ -1,7 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-// add tests here
 describe('Should render all Form items correctly on the page', () => {
     it('should display the labels for the r, g and b values', () => {
         render(<App/>);
