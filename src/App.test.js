@@ -30,8 +30,6 @@ describe('Test the colour preview elements', () => {
     it('should display the correctly converted rgb to hex value as a colour', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('preview')).toHaveStyle({backgroundColor: '#000000'});
-
         fireEvent.change(screen.getByTestId('rInput'), {target: {value: '255'}});
         expect(screen.getByTestId('preview')).toHaveStyle({backgroundColor: '#ff0000'});
 
@@ -61,8 +59,6 @@ describe('Test the colour preview elements', () => {
     it('should default to 255 if an r, g or b value entered is higher than 255', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('preview')).toHaveStyle({backgroundColor: '#000000'});
-
         fireEvent.change(screen.getByTestId('rInput'), {target: {value: '1000'}});
         expect(screen.getByTestId('preview')).toHaveStyle({backgroundColor: '#ff0000'});
 
@@ -79,7 +75,6 @@ describe('Test the functionality of the RGB conversion', () => {
     it('should display the r value entered by the user if it is between 0 and 255', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('rInput').value).toBe('0');
         fireEvent.change(screen.getByTestId('rInput'), {target: {value: '24'}});
         expect(screen.getByTestId('rInput').value).toBe('24');
 
@@ -99,7 +94,6 @@ describe('Test the functionality of the RGB conversion', () => {
     it('should display the g value entered by the user if it is between 0 and 255', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('gInput').value).toBe('0');
         fireEvent.change(screen.getByTestId('gInput'), {target: {value: '190'}});
         expect(screen.getByTestId('gInput').value).toBe('190');
 
@@ -119,7 +113,6 @@ describe('Test the functionality of the RGB conversion', () => {
     it('should display the b value entered by the user if it is between 0 and 255', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('bInput').value).toBe('0');
         fireEvent.change(screen.getByTestId('bInput'), {target: {value: '25'}});
         expect(screen.getByTestId('bInput').value).toBe('25');
 
@@ -139,8 +132,6 @@ describe('Test the functionality of the RGB conversion', () => {
     it('should change input value to 255 if the user enters an r value greater than 255', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('rInput').value).toBe('0');
-
         fireEvent.change(screen.getByTestId('rInput'), {target: {value: '256'}});
         expect(screen.getByTestId('rInput').value).toBe('255');
 
@@ -151,8 +142,6 @@ describe('Test the functionality of the RGB conversion', () => {
     it('should change input value to 255 if the user enters an r value lower than 0', () => {
         render(<App/>);
 
-        expect(screen.getByTestId('rInput').value).toBe('0');
-
         fireEvent.change(screen.getByTestId('rInput'), {target: {value: '-1'}});
         expect(screen.getByTestId('rInput').value).toBe('255');
 
@@ -162,8 +151,6 @@ describe('Test the functionality of the RGB conversion', () => {
 
     it('should remove any extra symbols or letters from the g value input', () => {
         render(<App/>);
-
-        expect(screen.getByTestId('gInput').value).toBe('0');
 
         fireEvent.change(screen.getByTestId('gInput'), {target: {value: '91a'}});
         expect(screen.getByTestId('gInput').value).toBe('91');

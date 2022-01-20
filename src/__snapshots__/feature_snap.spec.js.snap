@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checks that DOM for App is consistent 1`] = `
+<div
+  className="Card"
+>
+  <div
+    className="App"
+  >
+    <header
+      className="App-header"
+    >
+      <img
+        alt="logo"
+        className="App-logo"
+        src="Colourwheel.png"
+      />
+      <h2>
+        Team 2: Colour Converter
+      </h2>
+      <form>
+        <button
+          className="Launch-Button"
+          onClick={[Function]}
+        >
+          See Project Files! 🚀
+        </button>
+      </form>
+    </header>
+  </div>
+  <div
+    className="App"
+  >
+    <label>
+      Hex:
+      <input
+        data-testid="hex"
+        name="r"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+    <div
+      className="Preview"
+      data-testid="preview"
+      style={
+        Object {
+          "backgroundColor": "",
+        }
+      }
+    />
+    <form>
+      <label
+        data-testid="r"
+      >
+        R:
+        <input
+          data-testid="rInput"
+          name="r"
+          onBlur={[Function]}
+          onChange={[Function]}
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+          value=""
+        />
+      </label>
+      <label
+        data-testid="g"
+      >
+        G:
+        <input
+          data-testid="gInput"
+          name="g"
+          onBlur={[Function]}
+          onChange={[Function]}
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+          value=""
+        />
+      </label>
+      <label
+        data-testid="b"
+      >
+        B:
+        <input
+          data-testid="bInput"
+          name="b"
+          onBlur={[Function]}
+          onChange={[Function]}
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+          value=""
+        />
+      </label>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`checks that DOM for Form is consistent 1`] = `
+<div
+  className="App"
+>
+  <label>
+    Hex:
+    <input
+      data-testid="hex"
+      name="r"
+      onChange={[Function]}
+      value=""
+    />
+  </label>
+  <div
+    className="Preview"
+    data-testid="preview"
+    style={
+      Object {
+        "backgroundColor": "",
+      }
+    }
+  />
+  <form>
+    <label
+      data-testid="r"
+    >
+      R:
+      <input
+        data-testid="rInput"
+        name="r"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        value=""
+      />
+    </label>
+    <label
+      data-testid="g"
+    >
+      G:
+      <input
+        data-testid="gInput"
+        name="g"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        value=""
+      />
+    </label>
+    <label
+      data-testid="b"
+    >
+      B:
+      <input
+        data-testid="bInput"
+        name="b"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        value=""
+      />
+    </label>
+  </form>
+</div>
+`;
+
+exports[`checks that DOM for Header is consistent 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="Colourwheel.png"
+    />
+    <h2>
+      Team 2: Colour Converter
+    </h2>
+    <form>
+      <button
+        className="Launch-Button"
+        onClick={[Function]}
+      >
+        See Project Files! 🚀
+      </button>
+    </form>
+  </header>
+</div>
+`;
