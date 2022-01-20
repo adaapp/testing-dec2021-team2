@@ -3,7 +3,7 @@ import App from './App';
 
 // add tests here
 describe('Should render all Form items correctly on page', () => {
-    it('should...', () => {
+    it('should check for value entered', () => {
         render(<App/>);
 
         expect(screen.getByTestId('r')).toBeInTheDocument();
@@ -12,5 +12,11 @@ describe('Should render all Form items correctly on page', () => {
 
         expect(screen.getByTestId('hex')).toBeInTheDocument();
         expect(screen.getByTestId('preview')).toBeInTheDocument();
+
+        expect(screen.getByTestId('rInput')).toBeInTheDocument();
+        expect(screen.getByTestId('gInput')).toBeInTheDocument();
+        expect(screen.getByTestId('bInput')).toBeInTheDocument();
+
+        fireEvent.change(screen.getByTestId('rInput'), {target: {value: '24'}})
     });
 });
