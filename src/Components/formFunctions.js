@@ -11,6 +11,11 @@ function convertRGB(r, g, b) {
     }
 };
 
+function convertHex(hex) {
+    let intValue = parseInt(hex, 16);
+    return [(intValue >> 16) & 255, (intValue >> 8) & 255, intValue & 255]
+}
+
 function isCorrectType(value) {
     return typeof(value) === 'string' || typeof(value) === 'number';
 };
@@ -27,5 +32,6 @@ export {
     convertRGB,
     cleanString,
     isCorrectType,
-    isValidFloat
+    isValidFloat,
+    convertHex
 };
