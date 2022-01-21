@@ -65,6 +65,14 @@ Our coding practices involved:
 <img width="633" alt="Screenshot 2022-01-19 at 23 07 30" src="https://user-images.githubusercontent.com/90607605/150232897-af8029a0-7774-48dc-8ce7-a2ffb524e721.png">
 
 <h1 align="left">Testing Strategy (definition of done) </h1>
+ The first thing we did for our testing strategy were some smoke tests because if a small error were to be spotted later in development it could cause as massive problem and way more work than needed.
+
+For our testing strategy we mainly wanted to focus on making sure that the user experience was as smooth as possible so before testing our logic or if the converter actually changed colours we wanted to make sure that the user inputs were properly validated and worked as expected.
+
+Once we made sure that all the user inputs were correctly validated and worked as expected we then proceeded to making sure that all of our functions worked as expected so we tested all the conversions to make sure that the colours being given were the expected colours that belong to the rbg value as well as the correct hex value being displayed.
+
+If we ever ran into problems we would bring it up on our weekly meeting and either work on fixing it as a team or someone would be put in charge of fixing the error, this was to make sure that noone felt like they were alone and so the errors can be fixed before more code was added.
+
 <h1 align="left">CI/CD Pipeline</h1>
 The CI/CD Pipeline is a series of steps needed to complete a new version of the software and it stands for Continious Integration/Continuous Delivery. The main steps in this pipeline are:
 
