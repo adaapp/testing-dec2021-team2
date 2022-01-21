@@ -34,6 +34,19 @@ The main methodology we used as a team was an agile methodology which meant that
 
 
 <h1 align="left">Coding Practice </h4>
+ At the start of the project we discussed what coding practices we would use in order to keep our code neat and in order to make sure that it is uniform and easily understandable. Our main hurdle was making sure that everyone knew what eachothers code did and if there was an error it would be easily found and understood.
+Our coding practices involved:
+
+-Commenting your code.
+ 
+-Using spacing to distinguish between blocks of code.
+ 
+-Making sure that variables have reasonable names.
+ 
+
+![enter image description here](https://media.discordapp.net/attachments/622042335391252491/933957053733568542/unknown.png?width=515&height=468)
+
+
 
 <h1 align="left">A/B Testing</h4>
 <h4 align="left">Please find our initial Figma prototype here: </h4>
