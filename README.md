@@ -30,6 +30,7 @@ Our project will convert RGB colour values into hex colour values as well as sho
 ## How we managed the work
 The way we made sure that we stayed on task and that the project went smoothly was throught regular meetings organised by the scrum master as well as github project boards that were regularly updated by our scrum master.
 If anyone finished their task they could request a meeting to review the progress and new work would be assigned to them.
+The main methodology we used as a team was an agile methodology which meant that we all worked asynchronously on different parts of the project. Github is especially useful for this type of development because it allows your teammates to review your part of the code before it gets merged into the main project. ![enter image description here](https://media.discordapp.net/attachments/622042335391252491/933941173549162536/unknown.png?width=744&height=468)
 
 
 <h1 align="left">Coding Practice </h4>
@@ -52,7 +53,31 @@ If anyone finished their task they could request a meeting to review the progres
 
 <h1 align="left">Testing Strategy (definition of done) </h1>
 <h1 align="left">CI/CD Pipeline</h1>
-  
+The CI/CD Pipeline is a series of steps needed to complete a new version of the software and it stands for Continious Integration/Continuous Delivery. The main steps in this pipeline are:
+
+**Build**  - The stage where the application is compiled.
+ 
+**Test**  - The stage where code is tested. Automation here can save both time and effort.
+ 
+**Release**  - The stage where the application is delivered to the repository.
+ 
+**Deploy**  - In this stage code is deployed to production.
+ 
+**Validation and compliance**  - The steps to validate a build are determined by the needs of your organization.
+ 
+### These steps for us looked like this
+ 
+1.One of us would write some code in their individual machines
+ 
+2.They would test their code and make sure that it works as inteded
+ 
+3.They would upload their code to a  branch in order to be reviewed and stored on github
+ 
+4.After we checked it and agreed that it was good to go we would then merge it into the main program
+ 
+5.Next time we had a team meeting we would discuss any bugs or errors that might have appeared and we made sure that everyone knew what was done and what needed to be completed.
+
+ 
 <h4>Languages and Tools we used:</h4>
 <p> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> </p>
 </div>
